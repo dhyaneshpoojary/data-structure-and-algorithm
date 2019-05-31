@@ -6,7 +6,7 @@ public class QuickSort {
         int pivot = arr[right];
         int partitionIndex = left;
         for(int index=left; index<right; index++){
-            if(arr[index]<pivot){
+            if(arr[index]<= pivot){
                 swap(arr, partitionIndex, index);
                 partitionIndex++;
             }
@@ -30,7 +30,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5,4,1,2,6,3};
+        int[] arr = {1,2,3,4,5,6};
         sort(arr, 0, arr.length-1);
         for(int i=0; i<arr.length;i++){
             System.out.print(arr[i]+" ");
