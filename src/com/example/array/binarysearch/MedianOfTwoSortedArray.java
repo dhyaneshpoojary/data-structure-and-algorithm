@@ -1,4 +1,4 @@
-package com.example.binarysearch;
+package com.example.array.binarysearch;
 
 /**
  *
